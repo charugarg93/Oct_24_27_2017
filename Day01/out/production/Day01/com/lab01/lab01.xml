@@ -3,9 +3,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <util:properties id="sessionProps"
-                     location="classpath:com/lab01/sessions.properties">
-    </util:properties>
+    <!--<util:properties id="sessionProps"-->
+                     <!--location="classpath:com/lab01/sessions.properties">-->
+    <!--</util:properties>-->
+
+    <util:map id="sessionProps">
+        <entry key="topic1" value="abc 60 min"/>
+        <entry key="topic2" value="xyz 45 min"/>
+        <entry key="topic3" value="dksjf 50 min"/>
+        <entry key="topic4" value="lki 60 min"/>
+    </util:map>
 
     <bean id="sessionPlanner" class="com.lab01.SessionPlannerImpl">
         <property name="allTopics" ref="sessionProps"/>
