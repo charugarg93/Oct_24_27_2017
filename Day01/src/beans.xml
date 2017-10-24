@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="company" class="com.intuit.Company"></bean>
+    <!--<util:properties id="day01props" location="classpath:day01.properties">-->
+    <!--</util:properties>-->
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:day01.properties"></property>
+    </bean>
+
+    <bean id="company" class="com.intuit.Company">
+        <constructor-arg value="Intuit"></constructor-arg>
+        <constructor-arg value="Bangalore"></constructor-arg>
+        <property name="founders">
+            <list>
+                <value>A</value>
+                <value>B</value>
+            </list>
+        </property>
+        <property name="hq" value="${company.hq}"></property>
+        <property name="size" value="${company.size}"></property>
+    </bean>
 
     <bean id="hello" class="com.intuit.Hello" scope="prototype"></bean>
 
     <bean id="door" class="com.intuit.Door">
+        <property name="material" value="TeakWood"></property>
         <property name="alarm" ref="soundAlarm"/>
     </bean>
 
@@ -15,6 +34,7 @@
     <bean id="visualAlarm" class="com.intuit.VisualAlarm"></bean>
 
     <bean id="door2" class="com.intuit.Door">
+        <property name="material" value="RubberWood"></property>
         <property name="alarm" ref="visualAlarm"/>
     </bean>
 
