@@ -5,6 +5,8 @@ public class GameResult {
     private int attempts;
     private String message;
     private boolean gameOver;
+    private int target;
+
 
     public GameResult(){}
     public GameResult(int guess, int attempts, String message, boolean gameOver) {

@@ -24,7 +24,9 @@ public class GameController {
     public GameResult play(@PathVariable("id")String id,@PathVariable("guess")int guess){
         GuessingGame game = gameUserStore.getGameInstance(id);
         game.play(guess);
+
         GameResult gameResult = new GameResult(guess,game.getAttempts(),game.getMessage(),game.isGameOver());
+
         return gameResult;
     }
 
