@@ -1,0 +1,11 @@
+Continue working with GuessingGame application where you already have two services.
+1) The UI client-facing service
+2) Game Logic service
+
+Build a third service, say GameStoreService that does the following.
+1) It stores the name of the person, the target number, and total number of attempts in a DB. 
+2) It lists all the records
+
+Once the game is over, from UI, you ask for the name of the person and pass the above information to the GameStoreService.
+When a person wants to see the game history of all the persons who have played, she would just call GameStoreService and get all the persons information sorted in ascending order of number of attempts.
+
