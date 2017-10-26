@@ -18,16 +18,16 @@ public class Movie {
     @Column
     private String language;
 
-    @OneToMany
-    private List<Actor> actors;
-
-    public List<Actor> getActors() {
-        return actors;
-    }
-
-    public void setActors(List<Actor> actors) {
-        this.actors = actors;
-    }
+//    @OneToMany
+//    private List<Actor> actors;
+//
+//    public List<Actor> getActors() {
+//        return actors;
+//    }
+//
+//    public void setActors(List<Actor> actors) {
+//        this.actors = actors;
+//    }
 
     public int getId() {
         return id;

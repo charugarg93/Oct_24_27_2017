@@ -21,6 +21,11 @@ public class MoviesController {
     @Autowired
     private ActorRepository actorRepository;
 
+    @RequestMapping("/listactors/{id}")
+    public List<Actor> findByMovieId(@PathVariable int id){
+        return actorRepository.findByMovieId(id);
+    }
+
 
     @RequestMapping("/create")
     public String createMovie(){
