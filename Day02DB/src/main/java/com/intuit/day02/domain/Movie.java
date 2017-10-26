@@ -1,6 +1,7 @@
 package com.intuit.day02.domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="movies")
@@ -17,6 +18,16 @@ public class Movie {
     @Column
     private String language;
 
+    @OneToMany
+    private List<Actor> actors;
+
+    public List<Actor> getActors() {
+        return actors;
+    }
+
+    public void setActors(List<Actor> actors) {
+        this.actors = actors;
+    }
 
     public int getId() {
         return id;
