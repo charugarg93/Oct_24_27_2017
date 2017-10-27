@@ -1,0 +1,4 @@
+27-10-2017 10:51:00.901 [main] INFO  com.intuit.demo.DemoApplication - No active profile set, falling back to default profiles: default
+27-10-2017 10:51:07.301 [main] INFO  com.intuit.demo.DemoApplication - Started DemoApplication in 27.422 seconds (JVM running for 38.314)
+27-10-2017 10:51:31.471 [http-nio-8080-exec-1] INFO  com.intuit.demo.UselessController - hello in useless controller called
+27-10-2017 10:51:33.650 [http-nio-8080-exec-2] INFO  com.intuit.demo.UselessController - hello in useless controller called
