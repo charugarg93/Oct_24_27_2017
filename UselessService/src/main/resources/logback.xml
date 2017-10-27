@@ -4,7 +4,7 @@
   <appender name="ROLLIN" class="ch.qos.logback.core.rolling.RollingFileAppender">
    <!-- <file>search-index.log</file> -->
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-      <fileNamePattern>useless.%d{dd-MM-yyyy}.log</fileNamePattern>
+      <fileNamePattern>useless.%d{dd-MM-yyyy-HH-mm}.log</fileNamePattern>
       <maxHistory>15</maxHistory>
       <totalSizeCap>2GB</totalSizeCap>
     </rollingPolicy>
