@@ -1,0 +1,4 @@
+27-10-2017 13:38:02.416 [main] INFO  com.intuit.demo.HelloControllerTest - No active profile set, falling back to default profiles: default
+27-10-2017 13:38:03.155 [main] INFO  com.intuit.demo.HelloControllerTest - Started HelloControllerTest in 21.032 seconds (JVM running for 76.004)
+27-10-2017 13:38:23.450 [main] INFO  com.intuit.demo.LunchControllerTest - No active profile set, falling back to default profiles: default
+27-10-2017 13:38:23.940 [main] INFO  com.intuit.demo.LunchControllerTest - Started LunchControllerTest in 20.699 seconds (JVM running for 96.788)

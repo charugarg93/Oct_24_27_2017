@@ -1,0 +1,4 @@
+27-10-2017 13:37:09.846 [main] INFO  com.intuit.demo.DemoApplicationTests - No active profile set, falling back to default profiles: default
+27-10-2017 13:37:16.632 [main] INFO  com.intuit.demo.DemoApplicationTests - Started DemoApplicationTests in 28.101 seconds (JVM running for 29.483)
+27-10-2017 13:37:36.942 [main] INFO  c.i.d.HelloControllerIntegrationTest - No active profile set, falling back to default profiles: default
+27-10-2017 13:37:41.719 [main] INFO  c.i.d.HelloControllerIntegrationTest - Started HelloControllerIntegrationTest in 25.031 seconds (JVM running for 54.568)
