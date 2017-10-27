@@ -1,0 +1,3 @@
+27-10-2017 12:27:00.568 [main] INFO  com.intuit.demo.LunchControllerTest - Started LunchControllerTest in 23.579 seconds (JVM running for 25.658)
+27-10-2017 12:27:41.778 [main] INFO  com.intuit.demo.LunchControllerTest - No active profile set, falling back to default profiles: default
+27-10-2017 12:27:43.429 [main] INFO  com.intuit.demo.LunchControllerTest - Started LunchControllerTest in 23.405 seconds (JVM running for 25.202)
