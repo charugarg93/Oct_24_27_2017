@@ -2,6 +2,7 @@ package com.intuit.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.stubbing.OngoingStubbing;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -23,8 +24,6 @@ public class HelloControllerTest {
     @MockBean
     private HelloController helloController;
 
-    @MockBean
-    private Maths maths;
 
     @Autowired
     private MockMvc mockMvc;
@@ -32,7 +31,6 @@ public class HelloControllerTest {
     @Test
     public void sum()throws Exception{
         when(helloController.calculateSum(10,20)).thenReturn(30);
-        when(maths.sum(10,20)).thenReturn(30);
         mockMvc.perform(get("/sum/10/20")).
                 andExpect(status().isOk()).
                 andExpect(content().string("30"));

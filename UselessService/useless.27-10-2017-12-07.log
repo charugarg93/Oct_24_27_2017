@@ -1,0 +1,2 @@
+27-10-2017 12:07:17.651 [main] INFO  c.i.d.HelloControllerIntegrationTest - No active profile set, falling back to default profiles: default
+27-10-2017 12:07:26.173 [main] INFO  c.i.d.HelloControllerIntegrationTest - Started HelloControllerIntegrationTest in 30.725 seconds (JVM running for 32.375)
